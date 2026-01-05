@@ -1,67 +1,656 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <meta name="description" content="Damilola Oduolowu is a PhD candidate at the University of Missouri School of Journalism, specializing in digital and environmental journalism. Experienced multimedia journalist passionate about underreported stories.">
-    <meta name="keywords" content="Damilola Oduolowu, journalism, digital journalism, environmental journalism, climate change, multimedia journalist, BBC, University of Missouri">
-    <meta name="author" content="Damilola Oduolowu">
-    <meta property="og:title" content="Dami' Oduolowu" />
-    <meta property="og:description" content="Damilola Oduolowu is a PhD candidate at the University of Missouri School of Journalism, specializing in digital and environmental journalism. Experienced multimedia journalist passionate about underreported stories." />
-    <meta property="og:image" content="https://pulitzercenter.org/sites/default/files/styles/460x460/public/2024-09/Damilola%2BOduolowu%20%281%29.jpeg.webp?itok=fJoTcQ9d" />
-    <meta property="og:type" content="website" />
-    <title>Dami' Oduolowu</title>
-    <link rel="icon" type="image/webp" href="https://pulitzercenter.org/sites/default/files/styles/460x460/public/2024-09/Damilola%2BOduolowu%20%281%29.jpeg.webp?itok=fJoTcQ9d" />
-    <link href="styles.css" rel="stylesheet" />
-    <script src="script.js" defer></script>
-  </head>
-  <body style="--test: yellow">
-    <div class="card">
-      <div class="gradient-layer"></div>
-      <div class="info">
-        <div class="bio">
-          <h2>Hi, I am Damilola Oduolowu</h2>
-          <i>PhD Candidate & Multimedia Journalist</i>
-          <br />
-          <b class="line"></b>
-          <p>
-            Damilola Oduolowu is a PhD candidate at the University of Missouri
-            School of Journalism, studying digital journalism and
-            environmental/climate change journalism. He is a multitalented
-            journalist with a decade of professional experience in multimedia
-            journalism. Before starting the Ph.D. program at the Missouri School
-            of Journalism, he worked as a Senior Journalist Reporter with the
-            British Broadcasting Corporation (BBC) World Service, based in
-            Nigeria, covering West Africa for the BBC's Youth News Program,
-            "What's New?" He has numerous stories to his credit, spanning
-            television, radio, and digital platforms (podcast, video, and web).
-            He is passionate about telling underreported stories for social and
-            behavioral change.
-          </p>
-          <button>Get in touch</button>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/damilolaoduolowu/" target="_blank">
-              <i class="fa fa-linkedin-square"></i>
-            </a>
-            <a href="https://www.instagram.com/damioduolowu/" target="_blank">
-              <i class="fa fa-instagram"></i>
-            </a>
+<html lang="en" class="dark">
 
-            <a href="https://x.com/damioduolowu/" target="_blank">
-              <i class="fa fa-twitter-square"></i>
-            </a>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Damilola Oduolowu is a PhD candidate at the University of Missouri School of Journalism, specializing in digital journalism and environmental/climate change journalism. Experienced multimedia journalist with BBC World Service background.">
+  <meta name="keywords" content="Damilola Oduolowu, journalism, digital journalism, environmental journalism, climate change, multimedia journalist, BBC, University of Missouri, journalist">
+  <meta name="author" content="Damilola Oduolowu">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Damilola Oduolowu, Ph.D. | Journalism Professor & Scholar">
+  <meta property="og:description" content="PhD candidate at University of Missouri School of Journalism. Specializing in digital and environmental journalism with decade of professional multimedia experience.">
+  <meta property="og:image" content="logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://damioduolowu.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Damilola Oduolowu, Ph.D. | Journalism Professor & Scholar">
+  <meta name="twitter:description" content="PhD candidate at University of Missouri School of Journalism. Specializing in digital and environmental journalism.">
+  <meta name="twitter:image" content="logo.webp">
+  <meta name="twitter:creator" content="@damioduolowu">
+  <title>Damilola Oduolowu, Ph.D. | Journalism Professor & Scholar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0f172a',
+              light: '#f8fafc',
+              primary: '#3b82f6',
+            }
+          },
+          letterSpacing: {
+            tightest: '-.025em',
+            tighter: '-.015em',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/webp" href="favicon.webp" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    :root {
+      --apple-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--apple-font);
+      scroll-behavior: smooth;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-display {
+      font-family: var(--apple-font);
+      letter-spacing: -0.022em;
+    }
+
+    .glass {
+      background: rgba(30, 41, 59, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .light .glass {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .scroll-indicator {
+      height: 3px;
+      background: #3b82f6;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 0%;
+      transition: width 0.1s ease-out;
+    }
+
+    .hero-shape {
+      position: absolute;
+      filter: blur(100px);
+      z-index: -1;
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+
+    #theme-toggle i {
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dark #theme-toggle .fa-sun {
+      display: block;
+    }
+
+    .dark #theme-toggle .fa-moon {
+      display: none;
+    }
+
+    .light #theme-toggle .fa-sun {
+      display: none;
+    }
+
+    .light #theme-toggle .fa-moon {
+      display: block;
+    }
+
+    .btn-apple {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-apple:hover {
+      transform: scale(1.02);
+      filter: brightness(1.1);
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #3b82f6 15%, #3b82f6 85%, transparent);
+      opacity: 0.2;
+    }
+
+    @media (min-width: 768px) {
+      .timeline-container::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .work-card {
+      transition: transform 0.3s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-brand-light text-slate-900 dark:bg-brand-dark dark:text-slate-100 overflow-x-hidden selection:bg-blue-500 selection:text-white">
+
+  <div class="scroll-indicator" id="progress-bar"></div>
+
+  <!-- Background Decoration -->
+  <div class="hero-shape w-96 h-96 bg-blue-500/20 top-[-5%] left-[-5%]"></div>
+  <div class="hero-shape w-[500px] h-[500px] bg-purple-500/10 bottom-[10%] right-[-10%]"></div>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle"
+    class="fixed bottom-8 right-8 z-[60] w-12 h-12 rounded-full glass shadow-xl flex items-center justify-center text-lg border border-white/20 active:scale-95 group">
+    <i class="fa-solid fa-sun text-yellow-400"></i>
+    <i class="fa-solid fa-moon text-blue-500"></i>
+  </button>
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-tightest flex items-center gap-2.5">
+        <div
+          class="w-8 h-8 bg-slate-900 dark:bg-white rounded-lg flex items-center justify-center dark:text-slate-900 text-white font-black text-sm">
+          DO</div>
+        <span class="dark:text-white text-slate-900">Damilola Oduolowu</span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 font-medium text-[13px] tracking-tight">
+        <a href="#about" class="opacity-60 hover:opacity-100 transition dark:text-white">About</a>
+        <a href="#research" class="opacity-60 hover:opacity-100 transition dark:text-white">Research</a>
+        <a href="#work" class="opacity-60 hover:opacity-100 transition dark:text-white">Portfolio</a>
+        <a href="#journey" class="opacity-60 hover:opacity-100 transition dark:text-white">Journey</a>
+        <a href="#contact"
+          class="bg-brand-primary text-white px-5 py-2 rounded-full btn-apple shadow-lg shadow-blue-500/20">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center pt-28 px-6 overflow-hidden">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-white/10 dark:text-blue-400 text-blue-600 text-[11px] font-bold uppercase tracking-wider mb-8">
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+          Journalism Professor & Former BBC Senior Journalist
         </div>
-        <div class="profile-pic">
-          <div></div>
+        <h1
+          class="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1] dark:text-white text-slate-900 tracking-tightest">
+          Bridging the <br><span class="text-gradient">Newsroom</span> & Classroom.
+        </h1>
+        <p class="text-lg md:text-xl dark:text-slate-400 text-slate-500 mb-10 leading-relaxed max-w-lg font-normal">
+          Journalism educator and researcher with a PhD from Mizzou and a decade of experience in global broadcast
+          journalism.
+        </p>
+        <div class="flex flex-wrap gap-5">
+          <a href="#contact"
+            class="bg-slate-900 dark:bg-white dark:text-slate-900 text-white px-7 py-3.5 rounded-xl font-semibold text-sm btn-apple flex items-center gap-2">
+            Get in Touch
+            <i class="fa-solid fa-paper-plane text-[10px]"></i>
+          </a>
+          <a href="#"
+            class="bg-white/10 dark:bg-white/5 border border-slate-200 dark:border-white/10 dark:text-white text-slate-700 px-7 py-3.5 rounded-xl font-semibold text-sm btn-apple flex items-center gap-2">
+            Download CV
+            <i class="fa-solid fa-download text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="relative reveal delay-200">
+        <div
+          class="relative z-10 w-full aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl bg-slate-100 dark:bg-slate-800/50">
+          <img src="https://pulitzercenter.org/sites/default/files/2024-09/Damilola%2BOduolowu%20%281%29.jpeg"
+            alt="Damilola Oduolowu" class="w-full h-full object-cover object-top" />
+          <div class="absolute bottom-10 left-10 right-10">
+            <div class="glass p-6 rounded-3xl border border-white/5">
+              <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Current Focus</p>
+              <h4 class="text-lg font-semibold text-white">Social Media & Mobile Journalism</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-32 px-6">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2 reveal">
+        <h2 class="text-3xl font-bold mb-8 tracking-tightest">Biography</h2>
+        <div class="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+          <p>
+            Damilola Oduolowu is a multitalented journalism educator, researcher and journalist with a decade of
+            experience working as a staff journalist for leading African and global media organizations, including the
+            <strong>British Broadcasting Corporation (BBC) World Service</strong>. As a BBC senior journalist, he
+            reported and produced stories from the West African region for television, radio and digital (web, video and
+            podcast).
+          </p>
+          <p>
+            He earned his <strong>PhD in Journalism with highest distinction</strong> from the University of Missouri
+            School of Journalism in Fall 2025. He also had the distinct honor of serving as the Fall 2025 Mizzou
+            Graduate School doctoral commencement marshal.
+          </p>
+          <p>
+            Oduolowu has always been an advocate of bridging the gap between the newsroom and the classroom and aims to
+            impact existing media practices and emerging technologies through his research and teaching. He currently
+            teaches Social Media and Mobile Journalism as well as Introductory Reporting and Writing.
+          </p>
+        </div>
+      </div>
+      <div class="reveal delay-200">
+        <h2 class="text-3xl font-bold mb-8 tracking-tightest">Education</h2>
+        <div class="space-y-8">
+          <div class="border-l-2 border-blue-500 pl-6">
+            <h4 class="font-bold text-slate-900 dark:text-white">Ph.D., Journalism</h4>
+            <p class="text-sm text-slate-500">University of Missouri-Columbia</p>
+            <p class="text-xs text-blue-500 mt-1">Class of 2025</p>
+          </div>
+          <div class="border-l-2 border-slate-200 dark:border-slate-700 pl-6">
+            <h4 class="font-bold text-slate-900 dark:text-white">M.Sc., Mass Communication</h4>
+            <p class="text-sm text-slate-500">University of Lagos</p>
+          </div>
+          <div class="border-l-2 border-slate-200 dark:border-slate-700 pl-6">
+            <h4 class="font-bold text-slate-900 dark:text-white">B.Sc., Mass Communication</h4>
+            <p class="text-sm text-slate-500">Lagos State University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="py-24 px-6 bg-slate-50/50 dark:bg-slate-900/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="reveal mb-16">
+        <h3 class="text-[10px] font-bold text-blue-500 uppercase tracking-[0.2em] mb-4">Research & Publications</h3>
+        <h2 class="text-4xl font-bold mb-8 tracking-tightest">Advancing Media Sociology</h2>
+        <div class="max-w-3xl text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
+          <p>Oduolowu's research agenda centers on media sociology, especially in digital journalism, citizen journalism
+            and environmental/climate change journalism. His work examines how citizen journalism and traditional news
+            outlets cover environmental and climate issues.</p>
+          <p>His recent studies look at the intersection of citizen journalism and environmental journalism,
+            particularly the role of digital communication and social media used by environmental activists to highlight
+            environmental and climate issues in marginalized and vulnerable communities.</p>
+        </div>
+      </div>
+
+      <div class="grid gap-6 reveal mb-12">
+        <!-- Pub 1 -->
+        <div class="glass p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-all">
+          <span class="text-[10px] font-bold text-blue-500 uppercase tracking-widest block mb-2">Media, Culture &
+            Society (2025)</span>
+          <h4 class="text-xl font-bold mb-4 tracking-tight">Extractive Journalism: Conceptualizing extractivismo in
+            climate and environmental journalism</h4>
+          <p class="text-sm text-slate-500 mb-4">Mislán C., Oduolowu, D., & Zielinski, I.</p>
+          <a href="https://doi.org/10.1177/01634437251351793" target="_blank"
+            class="text-xs font-bold text-blue-500 uppercase flex items-center gap-2 hover:underline">
+            Read Publication <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+          </a>
+        </div>
+
+        <!-- Pub 2 -->
+        <div class="glass p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-all">
+          <span class="text-[10px] font-bold text-blue-500 uppercase tracking-widest block mb-2">Journalism
+            (2025)</span>
+          <h4 class="text-xl font-bold mb-4 tracking-tight">We’re lucky to have them: Exploring the audience perspective
+            on volunteer journalism</h4>
+          <p class="text-sm text-slate-500 mb-4">Heiselberg, L., Mathews, N., Jadhav, P., Oduolowu, D., & Poulsen, M.V.
+          </p>
+          <a href="https://doi.org/10.1177/14648849251355765" target="_blank"
+            class="text-xs font-bold text-blue-500 uppercase flex items-center gap-2 hover:underline">
+            Read Publication <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+          </a>
+        </div>
+
+        <!-- Pub 3 -->
+        <div class="glass p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-all">
+          <span class="text-[10px] font-bold text-blue-500 uppercase tracking-widest block mb-2">Journalism Practice
+            (2024)</span>
+          <h4 class="text-xl font-bold mb-4 tracking-tight">Volunteer Journalism: Defining a Sub-field of Journalism
+            Studies</h4>
+          <p class="text-sm text-slate-500 mb-4">Mathews, N., Heiselberg, L., Jadhav, P., & Oduolowu, D.</p>
+          <a href="https://doi.org/10.1080/17512786.2024.2427620" target="_blank"
+            class="text-xs font-bold text-blue-500 uppercase flex items-center gap-2 hover:underline">
+            Read Publication <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+          </a>
+        </div>
+
+        <!-- Pub 4 -->
+        <div class="glass p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-all">
+          <span class="text-[10px] font-bold text-blue-500 uppercase tracking-widest block mb-2">Corporate
+            Communications (2023)</span>
+          <h4 class="text-xl font-bold mb-4 tracking-tight">Permanent scars, improvisation, and new paths forward:
+            Communication agency leadership responses to COVID-19</h4>
+          <p class="text-sm text-slate-500 mb-4">Capizzo L., Nzau T., Oduolowu, D., Brengarth L., & Duffy M.</p>
+          <a href="https://doi.org/10.1108/CCIJ-05-2023-0079" target="_blank"
+            class="text-xs font-bold text-blue-500 uppercase flex items-center gap-2 hover:underline">
+            Read Publication <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Work Samples Section -->
+  <section id="work" class="py-32 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Portfolio</h3>
+        <h2 class="text-4xl font-bold tracking-tightest">Work Samples & Media</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Media Files -->
+        <div class="reveal work-card h-full">
+          <div class="glass p-6 rounded-[2rem] h-full border border-white/5 flex flex-col">
+            <div class="w-10 h-10 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 mb-4">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <h4 class="text-lg font-bold mb-2 tracking-tight">Media Files</h4>
+            <p class="text-xs text-slate-500 mb-6 flex-grow leading-relaxed">Broadcast journalism samples, audio/video
+              clips, and BBC documentaries (Google Drive).</p>
+            <a href="#"
+              class="text-[10px] font-bold text-blue-500 uppercase flex items-center gap-2 hover:gap-3 transition-all">
+              Access Files <i class="fa-solid fa-arrow-right text-[8px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Research Papers -->
+        <div class="reveal delay-75 work-card h-full">
+          <div class="glass p-6 rounded-[2rem] h-full border border-white/5 flex flex-col">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-500 mb-4">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <h4 class="text-lg font-bold mb-2 tracking-tight">Research Papers</h4>
+            <p class="text-xs text-slate-500 mb-6 flex-grow leading-relaxed">Full-text academic papers on digital
+              activism and journalism sociology.</p>
+            <a href="#research"
+              class="text-[10px] font-bold text-emerald-500 uppercase flex items-center gap-2 hover:gap-3 transition-all">
+              View List <i class="fa-solid fa-arrow-right text-[8px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Articles/Blogs -->
+        <div class="reveal delay-150 work-card h-full">
+          <div class="glass p-6 rounded-[2rem] h-full border border-white/5 flex flex-col">
+            <div class="w-10 h-10 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-4">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <h4 class="text-lg font-bold mb-2 tracking-tight">Articles & Blogs</h4>
+            <p class="text-xs text-slate-500 mb-6 flex-grow leading-relaxed">Selected journalistic pieces, news reports,
+              and blog entries.</p>
+            <a href="#"
+              class="text-[10px] font-bold text-purple-500 uppercase flex items-center gap-2 hover:gap-3 transition-all">
+              Read More <i class="fa-solid fa-arrow-right text-[8px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slides -->
+        <div class="reveal delay-200 work-card h-full">
+          <div class="glass p-6 rounded-[2rem] h-full border border-white/5 flex flex-col">
+            <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-500 mb-4">
+              <i class="fa-solid fa-person-chalkboard"></i>
+            </div>
+            <h4 class="text-lg font-bold mb-2 tracking-tight">Slides & Presentations</h4>
+            <p class="text-xs text-slate-500 mb-6 flex-grow leading-relaxed">Conference slides and classroom
+              presentation materials.</p>
+            <a href="#"
+              class="text-[10px] font-bold text-orange-500 uppercase flex items-center gap-2 hover:gap-3 transition-all">
+              View Slides <i class="fa-solid fa-arrow-right text-[8px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Journey (Timeline) -->
+  <section id="journey"
+    class="py-24 px-6 border-y dark:border-white/5 border-slate-100 bg-slate-50/30 dark:bg-slate-900/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-20 reveal">
+        <h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Media Experience & Career</h3>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tightest">Professional Journey</h2>
+      </div>
+
+      <div class="relative timeline-container">
+        <!-- USC Entry -->
+        <div class="relative mb-24 md:flex md:justify-between items-center w-full reveal">
+          <div class="hidden md:block w-[45%]"></div>
+          <div
+            class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full glass border border-blue-500/50 flex items-center justify-center z-10 bg-brand-light dark:bg-brand-dark shadow-xl">
+            <i class="fa-solid fa-university text-blue-500 text-sm"></i>
+          </div>
+          <div class="ml-16 md:ml-0 md:w-[45%] glass p-8 rounded-[2.5rem] border border-blue-500/10 shadow-sm">
+            <span
+              class="inline-block px-3 py-1 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">Current</span>
+            <h4 class="text-2xl font-bold mb-1 tracking-tightest">Faculty Member</h4>
+            <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">University of South Carolina (SJMC)
+            </p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Instruction in Social Media and Mobile Journalism. Bridging newsroom ethics with classroom theory for
+              future journalists.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mizzou Entry -->
+        <div class="relative mb-24 md:flex md:justify-between items-center w-full reveal delay-100 flex-row-reverse">
+          <div class="hidden md:block w-[45%]"></div>
+          <div
+            class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full glass border border-emerald-500/50 flex items-center justify-center z-10 bg-brand-light dark:bg-brand-dark shadow-xl">
+            <i class="fa-solid fa-graduation-cap text-emerald-500 text-sm"></i>
+          </div>
+          <div class="ml-16 md:ml-0 md:w-[45%] glass p-8 rounded-[2.5rem] border border-emerald-500/10 shadow-sm">
+            <span
+              class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">2022
+              — 2025</span>
+            <h4 class="text-2xl font-bold mb-1 tracking-tightest">PhD Scholar & Marshal</h4>
+            <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">University of Missouri School of
+              Journalism</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Specialized in media sociology. Graduated with highest distinction and served as Graduate School Doctoral
+              Commencement Marshal.
+            </p>
+          </div>
+        </div>
+
+        <!-- BBC Entry -->
+        <div class="relative mb-12 md:flex md:justify-between items-center w-full reveal delay-200">
+          <div class="hidden md:block w-[45%]"></div>
+          <div
+            class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full glass border border-purple-500/50 flex items-center justify-center z-10 bg-brand-light dark:bg-brand-dark shadow-xl">
+            <i class="fa-solid fa-broadcast-tower text-purple-500 text-sm"></i>
+          </div>
+          <div class="ml-16 md:ml-0 md:w-[45%] glass p-8 rounded-[2.5rem] border border-purple-500/10 shadow-sm">
+            <span
+              class="inline-block px-3 py-1 bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">Senior
+              Journalist</span>
+            <h4 class="text-2xl font-bold mb-1 tracking-tightest">BBC World Service</h4>
+            <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">West African Region</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+              Reporting and producing news for TV, Radio, and Digital. Focused on uncovering stories with impact across
+              marginalized communities.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="text-[10px] font-bold text-purple-400 hover:underline uppercase">View Highlights</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Grants -->
+  <section id="awards" class="py-32 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-16 text-center tracking-tightest">Honors & Grants</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Award 1 -->
+        <div class="glass p-8 rounded-3xl border border-blue-500/10 flex gap-6 reveal">
+          <div class="text-blue-500 text-3xl shrink-0"><i class="fa-solid fa-award"></i></div>
+          <div>
+            <h4 class="font-bold mb-1">Scholar of Distinction</h4>
+            <p class="text-sm text-slate-500">University of Missouri (2025)</p>
+          </div>
+        </div>
+        <!-- Award 2 -->
+        <div class="glass p-8 rounded-3xl border border-blue-500/10 flex gap-6 reveal delay-75">
+          <div class="text-blue-500 text-3xl shrink-0"><i class="fa-solid fa-leaf"></i></div>
+          <div>
+            <h4 class="font-bold mb-1">Pulitzer Center Grant ($5,000)</h4>
+            <p class="text-sm text-slate-500 italic">"Lagos's Vanishing Mangroves" (2024)</p>
+          </div>
+        </div>
+        <!-- Award 3 -->
+        <div class="glass p-8 rounded-3xl border border-blue-500/10 flex gap-6 reveal delay-150">
+          <div class="text-blue-500 text-3xl shrink-0"><i class="fa-solid fa-star"></i></div>
+          <div>
+            <h4 class="font-bold mb-1">Mizzou ‘18 Award</h4>
+            <p class="text-sm text-slate-500">University of Missouri (2025)</p>
+          </div>
+        </div>
+        <!-- Award 4 -->
+        <div class="glass p-8 rounded-3xl border border-blue-500/10 flex gap-6 reveal delay-200">
+          <div class="text-blue-500 text-3xl shrink-0"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h4 class="font-bold mb-1">Remington R. Williams Award</h4>
+            <p class="text-sm text-slate-500">University of Missouri System (2024)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-32 px-6">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 dark:text-white text-slate-900 tracking-tightest">Connect with
+        Damilola.</h2>
+      <p class="text-lg dark:text-slate-400 text-slate-500 mb-12 max-w-xl mx-auto font-medium">Available for research
+        partnerships, newsroom training, and speaking engagements.</p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+        <a href="mailto:damioduolowu@gmail.com"
+          class="bg-brand-primary text-white px-8 py-4 rounded-2xl font-bold text-sm btn-apple shadow-xl shadow-blue-500/20 flex items-center justify-center gap-3">
+          <i class="fa-solid fa-envelope"></i> damioduolowu@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/damilolaoduolowu" target="_blank"
+          class="dark:bg-white/5 bg-slate-100 border dark:border-white/10 border-slate-200 dark:text-white text-slate-700 px-8 py-4 rounded-2xl font-bold text-sm btn-apple flex items-center justify-center gap-3">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://x.com/damioduolowu" target="_blank"
+          class="dark:bg-white/5 bg-slate-100 border dark:border-white/10 border-slate-200 dark:text-white text-slate-700 px-8 py-4 rounded-2xl font-bold text-sm btn-apple flex items-center justify-center gap-3">
+          <i class="fa-brands fa-x-twitter"></i> @damioduolowu
+        </a>
+      </div>
+
+      <a href="#"
+        class="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-blue-500 transition-colors group">
+        <i class="fa-solid fa-file-pdf group-hover:scale-110 transition-transform"></i> Download Professional CV
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-16 border-t dark:border-white/5 border-slate-100 bg-slate-50/20 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-slate-400 text-[11px] font-semibold tracking-wider uppercase">
+        ©
+        <script>document.write(new Date().getFullYear())</script> Damilola Oduolowu, Ph.D. · USC & Mizzou
+      </div>
+      <div class="flex gap-8 items-center">
+        <a href="https://x.com/damioduolowu" target="_blank"
+          class="text-slate-400 hover:text-brand-primary transition-all"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/damilolaoduolowu" target="_blank"
+          class="text-slate-400 hover:text-brand-primary transition-all"><i
+            class="fa-brands fa-linkedin-in text-lg"></i></a>
+        <a href="#" class="text-slate-400 hover:text-brand-primary transition-all"><i
+            class="fa-brands fa-researchgate"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = html.classList.contains('dark');
+      html.className = isDark ? 'light' : 'dark';
+    });
+
+    window.onscroll = function () {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+
+      const nav = document.getElementById('navbar');
+      if (winScroll > 30) {
+        nav.classList.add('glass', 'shadow-xl');
+        nav.classList.add('py-3');
+      } else {
+        nav.classList.remove('glass', 'shadow-xl');
+        nav.classList.remove('py-3');
+      }
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+
 </html>

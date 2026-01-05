@@ -1,179 +1,184 @@
 body {
-    margin: 0;
-    padding: 1.2em;
-    background-color: #333;
-    --test: #A8C189;
-  }
-  
+  margin: 0;
+  padding: 1.2em;
+  background-color: #333;
+  --test: #a8c189;
+}
+
+.card {
+  width: 100%;
+  height: calc(100vh - 2em);
+  background-image: url("https://images.unsplash.com/photo-1685504602466-c731b551f9e7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1164px) {
   .card {
-    width: 100%;
-    height: calc(100vh - 2em);
-    background-image: url('https://images.unsplash.com/photo-1685504602466-c731b551f9e7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-repeat: no-repeat;
-    background-size: 200%;
-    position: relative;
-  
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: background-size 15s;
-  }
-  
-  @media screen and (max-width: 1164px) {
-    .card {
-      background-size: 100% 100%;
-      background-position: center;
-    }
-  }
-  
-  .card.loaded {
-    background-size: 150%;
-  }
-  
-  .gradient-layer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    opacity: .7;
-    background: #A8C189;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E100FF, #A8C189);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, var(--test, green), #A8C189); 
-  }
-  
-  .info {
-    display: flex;
-    max-width: 680px;
-    padding: 0 2em;
-    justify-content: center;
-    font-family: Ubuntu;
-    color: rgb(24, 40, 29);
-    z-index: 1;
-  }
-  
-  .bio > i {
-    display: inline-block;
-    font-style: normal;
-    transform: rotateY(90deg);
-    transition: transform 1s;
-  }
-  
-  .card.loaded .bio > i {
-    transform: rotateY(0deg);
-  }
-  
-  .bio h2 {
-    transform: translateY(-30px);
-    transition: transform 1s;
-  }
-  .card.loaded .bio h2 {
-    transform: translateY(0);
-  }
-  
-  .bio .line {
-    display: block;
-    height: 2px;
-    width: 0px;
-    background-color: white;
-    margin-top: 1em;
-    transition: width 2s;
-  }
-  
-  .bio p {
-    opacity: 0;
-    transition: opacity 1s 1s;
-  }
-  
-  .card.loaded .bio p {
-    opacity: 1;
-  }
-  
-  .card.loaded .bio .line {
-    width: 100px;
-  }
-  
-  .bio button {
-    border: none;
-    background-color: #fff;
-    padding: 1em 2em;
-    font-size: 14px;
-    border-radius: 60px;
-    font-family: Ubuntu;
-    color: purple;
-    outline: none;
-  }
-  
-  .links {
-    margin-top: 1em;  
-  }
-  
-  .links a {
-    text-decoration: none;
-    font-size: 1.8em;
-    color: white;
-    padding-left: .2em;
-  }
-  
-  .profile-pic > div:first-child {
-    width: 200px;
-    height: 200px;
-    background-image: url('https://pulitzercenter.org/sites/default/files/styles/460x460/public/2024-09/Damilola%2BOduolowu%20%281%29.jpeg.webp?itok=fJoTcQ9d');
     background-size: cover;
-    border-radius: 100%;
-    box-shadow: 0 2px 15px rgba(0,0,0,.5);
-    transform: scale(1.1);
-    opacity: 0;
-    transition: opacity .5s, transform .5s;
+    background-position: center;
   }
-  
-  .card.loaded .profile-pic > div:first-child {
-    transform: scale(1);
-    opacity: 1;
+}
+
+.card.loaded {
+  background-size: cover;
+}
+
+.gradient-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.7;
+  background: #a8c189; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e100ff,
+    #a8c189
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--test, green), #a8c189);
+}
+
+.info {
+  display: flex;
+  max-width: 680px;
+  padding: 0 2em;
+  justify-content: center;
+  font-family: Ubuntu;
+  color: rgb(24, 40, 29);
+  z-index: 1;
+}
+
+.bio > i {
+  display: inline-block;
+  font-style: normal;
+  transform: rotateY(90deg);
+  transition: transform 1s;
+}
+
+.card.loaded .bio > i {
+  transform: rotateY(0deg);
+}
+
+.bio h2 {
+  transform: translateY(-30px);
+  transition: transform 1s;
+}
+.card.loaded .bio h2 {
+  transform: translateY(0);
+}
+
+.bio .line {
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: white;
+  margin-top: 1em;
+  transition: width 2s;
+}
+
+.bio p {
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card.loaded .bio p {
+  opacity: 1;
+}
+
+.card.loaded .bio .line {
+  width: 100px;
+}
+
+.bio button {
+  border: none;
+  background-color: #fff;
+  padding: 1em 2em;
+  font-size: 14px;
+  border-radius: 60px;
+  font-family: Ubuntu;
+  color: purple;
+  outline: none;
+}
+
+.links {
+  margin-top: 1em;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: white;
+  padding-left: 0.2em;
+}
+
+.profile-pic > div:first-child {
+  width: 200px;
+  height: 200px;
+  background-image: url("https://pulitzercenter.org/sites/default/files/styles/460x460/public/2024-09/Damilola%2BOduolowu%20%281%29.jpeg.webp?itok=fJoTcQ9d");
+  background-size: cover;
+  background-position: center top;
+  border-radius: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card.loaded .profile-pic > div:first-child {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .info {
+    flex-direction: column;
   }
-  
-  @media screen and ( max-width: 700px ) {
-    .info {
-      flex-direction: column;
-    }
-    
-    .bio {
-       order: 1;
-       text-align: center;
-    }
-    
-    .bio .line {
-      position: relative;
-      left: calc(50% - 50px);
-      transition: none !important;
-    }
-    
-    .profile-pic {
-      order: 0;
-     }
-    
-    .profile-pic > div {
-      margin: 0 auto;
-      transition: none !important;
-      opacity: 1 !important;
-      transform: scale(1) !important;
-    }
-    
-    .bio h2 {
-      transition: none !important;
-      transform: none !important;
-    }
-    
-    .bio p {
-      transition: none !important;
-      opacity: 1 !important;
-    }
-    
-    .bio > i {
-      transition: none !important;
-      transform: none !important;
-    }
+
+  .bio {
+    order: 1;
+    text-align: center;
   }
+
+  .bio .line {
+    position: relative;
+    left: calc(50% - 50px);
+    transition: none !important;
+  }
+
+  .profile-pic {
+    order: 0;
+  }
+
+  .profile-pic > div {
+    margin: 0 auto;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+
+  .bio h2 {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .bio p {
+    transition: none !important;
+    opacity: 1 !important;
+  }
+
+  .bio > i {
+    transition: none !important;
+    transform: none !important;
+  }
+}
