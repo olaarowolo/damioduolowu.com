@@ -13,14 +13,6 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🛠️ Set up PHP 8.3
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.3
-
-      - name: 📦 Install Composer dependencies
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader
-
       - name: 📤 Upload to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
