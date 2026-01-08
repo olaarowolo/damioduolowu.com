@@ -1,3 +1,86 @@
+@keyframes mobileMenuTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-mobileMenuTop {
+  animation: mobileMenuTop 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+#mobile-menu {
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  max-width: 100vw;
+  min-width: 0;
+  background: #0f172a !important;
+}
+
+.logo-name-mobile {
+  letter-spacing: -0.025em;
+}
+
+#mobile-menu .fa-xmark {
+  font-size: 1.6em;
+}
+
+#mobile-menu .btn-apple {
+  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.10);
+}
+@keyframes mobileMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-mobileMenu {
+  animation: mobileMenu 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+#mobile-menu .fa-xmark {
+  font-size: 1.6em;
+}
+
+#mobile-menu .btn-apple {
+  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.10);
+}
+/* Hamburger and Mobile Menu Styles */
+#hamburger {
+  z-index: 60;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.open {
+  display: flex;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 767px) {
+  #mobile-menu {
+    display: none;
+  }
+  #mobile-menu.open {
+    display: flex;
+  }
+}
 body {
   margin: 0;
   padding: 1.2em;

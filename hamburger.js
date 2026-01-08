@@ -1,8 +1,8 @@
-window.onload = function() {
+// Hamburger menu logic
+window.addEventListener('DOMContentLoaded', function() {
   var card = document.querySelector('.card');
   if (card) card.classList.add('loaded');
 
-  // Hamburger menu logic
   var hamburger = document.getElementById('hamburger');
   var mobileMenu = document.getElementById('mobile-menu');
   if (hamburger && mobileMenu) {
@@ -15,7 +15,7 @@ window.onload = function() {
       }
     });
   }
-}
+});
 
 function closeMobileMenu() {
   var mobileMenu = document.getElementById('mobile-menu');
