@@ -10,7 +10,7 @@
 }
 
 .animate-mobileMenuTop {
-  animation: mobileMenuTop 0.35s cubic-bezier(0.4,0,0.2,1);
+  animation: mobileMenuTop 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #mobile-menu {
@@ -30,7 +30,7 @@
 }
 
 #mobile-menu .btn-apple {
-  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.10);
+  box-shadow: 0 4px 24px 0 rgba(59, 130, 246, 0.1);
 }
 @keyframes mobileMenu {
   0% {
@@ -44,7 +44,7 @@
 }
 
 .animate-mobileMenu {
-  animation: mobileMenu 0.35s cubic-bezier(0.4,0,0.2,1);
+  animation: mobileMenu 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #mobile-menu .fa-xmark {
@@ -52,7 +52,7 @@
 }
 
 #mobile-menu .btn-apple {
-  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.10);
+  box-shadow: 0 4px 24px 0 rgba(59, 130, 246, 0.1);
 }
 /* Hamburger and Mobile Menu Styles */
 #hamburger {
@@ -69,8 +69,12 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 767px) {
